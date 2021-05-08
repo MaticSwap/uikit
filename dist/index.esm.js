@@ -2305,7 +2305,7 @@ var links = [
     {
         label: "Certik Audit (In-Progress)",
         icon: "ShieldIcon",
-        href: "https://twitter.com/CFuture/status/1367218225310818308",
+        href: "https://twitter.com/maticswap/status/1367218225310818308",
         target: "_blank",
     },
     {
@@ -2384,16 +2384,16 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/cfuture-binance/",
+                href: "https://github.com/maticswap-binance/",
                 target: '_blank',
             },
             {
                 label: "Docs",
-                href: "https://cfuture-binance.gitbook.io/cfuture-binance/",
+                href: "https://maticswap-binance.gitbook.io/maticswap-binance/",
             },
             {
                 label: "Blog",
-                href: "https://cfuture.medium.com/",
+                href: "https://maticswap.medium.com/",
             },
         ],
     },
@@ -2405,18 +2405,18 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/cfuturefinancechat",
+                href: "https://t.me/maticswapfinancechat",
             },
             {
                 label: "Announcements",
-                href: "https://t.me/cfuture",
+                href: "https://t.me/maticswap",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/CFuture",
+        href: "https://twitter.com/maticswap",
     },
 ];
 var MENU_HEIGHT = 64;
