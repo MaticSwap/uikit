@@ -31,7 +31,7 @@ export const links = [
   {
     label: "Certik Audit (In-Progress)",
     icon: "ShieldIcon",
-    href: "https://twitter.com/maticswap/status/1367218225310818308",
+    href: "https://twitter.com/MaticSwap/status/1367218225310818308",
     target: "_blank",
   },
   {
@@ -110,12 +110,12 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/maticswap-binance/",
-        target: '_blank',
+        href: "https://github.com/maticswap/",
+        target: "_blank",
       },
       {
         label: "Docs",
-        href: "https://maticswap-binance.gitbook.io/maticswap-binance/",
+        href: "https://maticswap.gitbook.io/maticswap/",
       },
       {
         label: "Blog",
@@ -132,7 +132,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/maticswapfinancechat",
+        href: "https://t.me/maticswapchat",
       },
       {
         label: "Announcements",
@@ -143,7 +143,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/maticswap",
+    href: "https://twitter.com/MaticSwap",
   },
 ];
 
