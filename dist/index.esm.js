@@ -57,9 +57,11 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var getThemeValue = function (path, fallback) { return function (theme) {
-    return get(theme, path, fallback);
-}; };
+var getThemeValue = function (path, fallback) {
+    return function (theme) {
+        return get(theme, path, fallback);
+    };
+};
 
 var rotate = keyframes(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var spinStyle = css(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate);
@@ -384,55 +386,34 @@ var Icon$K = function (props) {
 };
 
 var Icon$J = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React.createElement("circle", { cx: "16", cy: "16", r: "16", fill: "#64C6EB" }),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M13.76,8.72a6.31,6.31,0,0,0-3.49-4.15C7.46,3.45,3.54,2.85.92,4.79s.94,8.68,3.29,9,6.06-1,8.9,1.64S14.13,9.81,13.76,8.72Z", transform: "translate(0 -3.53)", fill: "#9c9b9b" }),
-            React.createElement("path", { d: "M11.65,8.27C10.72,6,6.45,4.91,4,5.92s.55,5.23,1.37,5.83a8.68,8.68,0,0,0,4.31,1C10.34,12.49,11.9,8.86,11.65,8.27Z", transform: "translate(0 -3.53)", fill: "#706f6e" })),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M18.24,8.72a6.31,6.31,0,0,1,3.49-4.15c2.81-1.12,6.73-1.72,9.35.22s-.94,8.68-3.29,9-6.06-1-8.9,1.64S17.87,9.81,18.24,8.72Z", transform: "translate(0 -3.53)", fill: "#a7a5a5" }),
-            React.createElement("path", { d: "M20.35,8.27c.93-2.24,5.2-3.36,7.7-2.35s-.55,5.23-1.37,5.83a8.68,8.68,0,0,1-4.31,1C21.66,12.49,20.1,8.86,20.35,8.27Z", transform: "translate(0 -3.53)", fill: "#868686" })),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M16.09,30.64c6.9,0,15.25-5.07,13.53-12.15-.58-2.41-1-5.19-1-5.19a8.78,8.78,0,0,0-8.78-8.78,34.14,34.14,0,0,1-3.76.35,34.14,34.14,0,0,1-3.75-.35A8.78,8.78,0,0,0,3.52,13.3s-.45,2.78-1,5.19C.77,25.57,9.12,30.64,16,30.64Z", transform: "translate(0 -3.53)", fill: "#f2f2f2" }),
-            React.createElement("path", { d: "M16.05,4.87a33.85,33.85,0,0,1-3.75-.35A8.78,8.78,0,0,0,3.52,13.3s-.45,2.78-1,5.19C.77,25.57,9.12,30.64,16,30.64h0Z", transform: "translate(0 -3.53)", fill: "#fff" })),
-        React.createElement("g", null,
-            React.createElement("g", null,
-                React.createElement("path", { d: "M9.09,17.88a.87.87,0,0,1-.95-.56c-.1-.36.11-.84.49-.86a.86.86,0,0,1,.94.58A.68.68,0,0,1,9.09,17.88Zm0-1.12a.21.21,0,1,0,.2.21A.2.2,0,0,0,9.1,16.76Z", transform: "translate(0 -3.53)", fill: "#585857" }),
-                React.createElement("path", { d: "M22.19,17a.87.87,0,0,1,.95-.58c.37,0,.58.5.48.86a.87.87,0,0,1-.95.56A.69.69,0,0,1,22.19,17Zm.88-.07a.2.2,0,1,0,.19-.21A.2.2,0,0,0,23.07,17Z", transform: "translate(0 -3.53)", fill: "#585857" })),
-            React.createElement("g", null,
-                React.createElement("path", { d: "M19.07,25.63c0-1.89-3-.29-3-1.48,0,1.19-3-.41-3,1.48a2.84,2.84,0,0,0,3,3A2.84,2.84,0,0,0,19.07,25.63Z", transform: "translate(0 -3.53)", fill: "#bdbcbc" }),
-                React.createElement("path", { d: "M19,25.29c-.37-1.34-3,0-3-1.14,0,1.1-2.57-.18-3,1.1,0,.11,1,.95,3,.95S19.05,25.39,19,25.29Z", transform: "translate(0 -3.53)", fill: "#cdcccc" }),
-                React.createElement("path", { d: "M16.05,24.16h0c0,1.19-3-.41-3,1.48a2.84,2.84,0,0,0,3,3h0Z", transform: "translate(0 -3.53)", fill: "#b3b3b3" }),
-                React.createElement("path", { d: "M16.05,24.16h0c0,1.1-2.57-.18-3,1.1,0,.11,1,.95,3,.95Z", transform: "translate(0 -3.53)", fill: "#c3c2c2" })),
-            React.createElement("g", null,
-                React.createElement("path", { d: "M16.05,15.07a3.36,3.36,0,0,1,1.39.3,3.8,3.8,0,0,1,1.9,4.52v.05a3.09,3.09,0,0,0-.09,1.35h0a2.7,2.7,0,0,1-.09,1.2,3.19,3.19,0,0,1-3,2.27H16a3.2,3.2,0,0,1-3-2.27,2.7,2.7,0,0,1-.08-1.2h0a3.42,3.42,0,0,0-.09-1.35l-.09-.31a3.9,3.9,0,0,1,0-2.22,3.16,3.16,0,0,1,3-2.34Z", transform: "translate(0 -3.53)", fill: "#4d4d4c" }),
-                React.createElement("path", { d: "M16.05,15.07h-.3a3.16,3.16,0,0,0-3,2.34,3.9,3.9,0,0,0,0,2.22l.09.31a3.42,3.42,0,0,1,.09,1.35,2.7,2.7,0,0,0,.08,1.2,3.2,3.2,0,0,0,3,2.27h.08Z", transform: "translate(0 -3.53)", fill: "#585857" })))));
+    return (React.createElement("svg", { width: "64.4312mm", height: "7.7892mm", version: "1.1", viewBox: "0 0 6443 779" },
+        React.createElement("g", { id: "Camada_x0020_1" },
+            React.createElement("g", { id: "_844409200", fill: "#004aad" },
+                React.createElement("path", { d: "M1292 667c-62,0 -105,-1 -128,-2l-15 36c-4,9 -8,20 -12,31 -8,21 -19,31 -33,31 -6,0 -12,-1 -16,-6 -4,-4 -6,-8 -6,-12 0,-8 3,-16 10,-26 10,-14 20,-33 30,-56 -29,-3 -44,-11 -44,-25 0,-15 8,-22 25,-22 10,0 22,2 36,5l256 -621 350 758 -267 0 -43 -91 -143 0zm-112 -42c33,3 63,4 89,4l150 0 -128 -276 -111 272z" }),
+                React.createElement("path", { d: "M2294 47c0,15 -16,23 -50,23l-118 0 0 688 -263 0 0 -688 -76 0c-27,0 -45,1 -55,4 -13,2 -22,4 -28,4 -17,0 -26,-7 -26,-21 0,-16 17,-24 51,-24l456 0c24,0 42,-1 53,-3 13,-2 24,-4 31,-4 17,0 25,7 25,21z" }),
+                React.createElement("polygon", { points: "2394,33 2655,33 2655,758 2394,758 " }),
+                React.createElement("path", { d: "M3415 637c14,0 21,7 21,23 0,13 -10,26 -30,39 -37,24 -68,40 -93,48 -48,14 -98,21 -150,21 -52,0 -102,-10 -150,-28 -49,-19 -90,-45 -124,-78 -72,-71 -107,-162 -107,-273 0,-53 10,-103 30,-148 20,-44 48,-83 83,-115 76,-68 170,-102 284,-102 64,0 120,11 168,33 52,23 78,42 78,58 0,7 -3,12 -7,17 -4,5 -9,7 -14,7 -11,0 -21,-5 -30,-14 -9,-10 -21,-19 -36,-27 -16,-8 -32,-14 -50,-20 -37,-11 -71,-17 -101,-17 -30,0 -55,2 -75,6l0 657c24,4 45,6 64,6 18,0 37,-1 56,-4 19,-2 38,-6 56,-12 42,-12 73,-30 94,-54 7,-9 13,-15 17,-18 5,-4 10,-5 16,-5z" }),
+                React.createElement("path", { d: "M3563 721c-12,-7 -23,-14 -31,-22 -9,-7 -13,-15 -13,-24 0,-16 7,-24 21,-24 9,0 19,5 31,15 11,10 23,19 37,27 14,8 29,14 46,20 34,11 65,17 94,17 28,0 50,-2 66,-6 15,-4 29,-9 39,-15 23,-14 34,-32 34,-54 0,-20 -10,-40 -29,-61 -17,-17 -40,-38 -70,-63l-87 -68c-88,-68 -140,-130 -156,-185 -5,-20 -8,-42 -8,-66 0,-23 6,-47 16,-70 11,-23 27,-44 48,-61 46,-38 107,-57 186,-57 39,0 75,6 107,18 32,11 54,22 65,31 12,9 18,18 18,25 0,16 -7,24 -20,24 -8,0 -15,-4 -24,-11 -9,-8 -18,-15 -28,-20 -11,-6 -23,-11 -36,-15 -29,-10 -57,-15 -85,-15 -50,0 -76,17 -76,51 0,14 5,27 14,38 16,21 48,51 96,90 48,39 86,72 115,101 29,29 51,56 66,79 23,36 35,74 35,114 0,39 -7,73 -20,100 -14,28 -34,51 -58,71 -53,42 -118,63 -196,63 -78,0 -144,-16 -197,-47z" }),
+                React.createElement("path", { d: "M5229 667c-62,0 -105,-1 -128,-2l-15 36c-4,9 -8,20 -12,31 -8,21 -19,31 -33,31 -6,0 -12,-1 -16,-6 -4,-4 -6,-8 -6,-12 0,-8 3,-16 10,-26 10,-14 20,-33 30,-56 -29,-3 -44,-11 -44,-25 0,-15 8,-22 25,-22 10,0 22,2 36,5l255 -621 351 758 -267 0 -43 -91 -143 0zm-112 -42c33,3 63,4 88,4l151 0 -129 -276 -110 272z" }),
+                React.createElement("path", { d: "M6123 545l46 2c66,0 120,-21 163,-65 44,-44 67,-101 69,-171 4,-108 -48,-181 -156,-219 -40,-14 -92,-21 -157,-21l-43 0 0 687 -261 0 0 -725 196 0c106,0 170,2 192,5 22,3 44,7 68,12 24,4 49,15 77,31 27,16 51,35 70,57 38,45 57,98 56,159 -2,78 -25,142 -68,194 -44,52 -105,84 -183,96 -22,3 -40,4 -53,4 -31,0 -46,-8 -46,-25 0,-6 3,-11 8,-15 5,-4 13,-6 22,-6z" }),
+                React.createElement("path", { d: "M4926 398l-131 383 -226 -437 -220 437 -263 -757 275 0 127 391 197 -410 207 369 5 14c7,14 16,0 29,10z" }),
+                React.createElement("polygon", { points: "4878,415 5026,5 5068,5 4920,415 " }),
+                React.createElement("path", { d: "M142 381l130 -383 226 437 220 -437 263 757 -275 0 -127 -391 -197 410 -207 -369 -5 -14c-6,-15 -15,-1 -28,-10z" }),
+                React.createElement("path", { d: "M239 168l0 0c10,4 16,15 12,26l-210 580 -42 0 214 -594c4,-10 16,-15 26,-12z" })))));
 };
 
 var Icon$I = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 512 512" }, props),
-        React.createElement("circle", { cx: "256", cy: "256", r: "256", fill: "url(#paint0_linear)" }),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M222.46,134.29s-11-48.07-55.48-65.87S60.16,41.12,18.62,72,33.46,209.66,70.84,214.4,167,197.79,212.08,240.51,228.32,151.63,222.46,134.29Z", transform: "translate(-4 -51.89)", fill: "#9c9b9b" }),
-            React.createElement("path", { d: "M189,127.17C174.2,91.56,106.45,73.76,66.69,89.78s8.75,83.08,21.81,92.58c12.71,9.25,57.11,19,68.39,15.43S192.86,136.59,189,127.17Z", transform: "translate(-4 -51.89)", fill: "#706f6e" })),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M293.54,134.29s11-48.07,55.48-65.87S455.84,41.12,497.38,72,482.54,209.66,445.16,214.4,349,197.79,303.92,240.51,287.68,151.63,293.54,134.29Z", transform: "translate(-4 -51.89)", fill: "#a7a5a5" }),
-            React.createElement("path", { d: "M327,127.17c14.76-35.61,82.51-53.41,122.27-37.39s-8.75,83.08-21.81,92.58c-12.71,9.25-57.12,19-68.39,15.43S323.14,136.59,327,127.17Z", transform: "translate(-4 -51.89)", fill: "#868686" })),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M259.41,482.28c109.57,0,242.08-80.54,214.87-192.9C465,251.11,457.8,207,457.8,207A139.36,139.36,0,0,0,318.45,67.65s-37.52,5.5-59.58,5.5-59.58-5.5-59.58-5.5A139.36,139.36,0,0,0,59.94,207s-7.21,44.1-16.48,82.37c-27.22,112.36,105.3,192.9,214.87,192.9Z", transform: "translate(-4 -51.89)", fill: "#f2f2f2" }),
-            React.createElement("path", { d: "M258.73,73.15c-22.07,0-59.44-5.5-59.44-5.5A139.36,139.36,0,0,0,59.94,207s-7.21,44.1-16.48,82.37c-27.22,112.36,105.3,192.9,214.87,192.9h.4Z", transform: "translate(-4 -51.89)", fill: "#fff" })),
-        React.createElement("g", null,
-            React.createElement("g", null,
-                React.createElement("path", { d: "M148.37,279.69c-5.75,1.59-13.51-3.11-15.1-8.86s1.74-13.31,7.7-13.6c7.9-.4,13.34,3.42,14.93,9.17A10.8,10.8,0,0,1,148.37,279.69Zm.1-17.76a3.34,3.34,0,1,0,3.11,3.34A3.24,3.24,0,0,0,148.47,261.93Z", transform: "translate(-4 -51.89)", fill: "#585857" }),
-                React.createElement("path", { d: "M356.34,266.4c1.59-5.75,7-9.57,14.93-9.17,6,.29,9.28,7.86,7.7,13.6s-9.35,10.45-15.1,8.86A10.8,10.8,0,0,1,356.34,266.4Zm13.87-1.13a3.12,3.12,0,1,0,3.11-3.34A3.22,3.22,0,0,0,370.21,265.27Z", transform: "translate(-4 -51.89)", fill: "#585857" })),
-            React.createElement("g", null,
-                React.createElement("path", { d: "M306.69,402.75c0-30.05-48-4.59-48-23.52,0,18.93-48-6.53-48,23.52s21.47,47,48,47S306.69,432.8,306.69,402.75Z", transform: "translate(-4 -51.89)", fill: "#bdbcbc" }),
-                React.createElement("path", { d: "M306,397.28c-5.74-21.28-47.3-.43-47.3-18,0,17.45-40.76-2.83-47.12,17.45-.54,1.72,16,15.08,47.23,15.08S306.46,398.86,306,397.28Z", transform: "translate(-4 -51.89)", fill: "#cdcccc" }),
-                React.createElement("path", { d: "M258.75,379.47c0-.08,0-.15,0-.24,0,18.93-48-6.53-48,23.52s21.47,47,48,47h0Z", transform: "translate(-4 -51.89)", fill: "#b3b3b3" }),
-                React.createElement("path", { d: "M258.75,379.49c0-.09,0-.17,0-.26,0,17.45-40.76-2.83-47.12,17.45-.54,1.72,16,15.05,47.14,15.08Z", transform: "translate(-4 -51.89)", fill: "#c3c2c2" })),
-            React.createElement("g", null,
-                React.createElement("path", { d: "M258.84,235.15a53.48,53.48,0,0,1,22.07,4.75c25.79,11.62,38.15,43.21,30.1,71.78l-.22.8a51.8,51.8,0,0,0-1.41,21.42h0a42.25,42.25,0,0,1-1.36,19c-6.9,21.14-25.75,36-47.55,36h-3c-21.8,0-40.65-14.84-47.55-36a42.39,42.39,0,0,1-1.35-19h0a52,52,0,0,0-1.41-21.42l-1.38-4.91c-3.24-11.5-3.52-23.9.17-35.25,7.11-21.82,24.41-37.17,48-37.17Z", transform: "translate(-4 -51.89)", fill: "#4d4d4c" }),
-                React.createElement("path", { d: "M258.73,235.15H254c-23.59,0-40.89,15.35-48,37.17-3.69,11.35-3.41,23.75-.17,35.25l1.38,4.91a52,52,0,0,1,1.41,21.42,42.39,42.39,0,0,0,1.35,19c6.9,21.14,25.75,36,47.55,36h1.26Z", transform: "translate(-4 -51.89)", fill: "#585857" })))));
+    return (React.createElement("svg", { version: "1.0", xmlns: "http://www.w3.org/2000/svg", width: "63pt", height: "30pt", viewBox: "0 0 512 296", preserveAspectRatio: "xMidYMid meet" },
+        React.createElement("g", { transform: "translate(0.000000,499.000000) scale(0.100000,-0.100000)", fill: "#004aad", stroke: "none" },
+            React.createElement("path", { d: "M2940 4901 c-44 -14 -84 -38 -110 -66 -20 -21 -25 -39 -28 -96 -7\r\n-123 18 -153 170 -200 118 -37 160 -67 156 -113 -4 -45 -60 -70 -154 -70 -56\r\n1 -80 6 -115 25 -42 24 -51 37 -64 102 -3 16 -11 27 -18 24 -8 -2 -13 -34 -15\r\n-91 -3 -80 -1 -87 15 -84 10 2 19 12 21 24 3 20 4 20 55 -5 44 -22 65 -26 134\r\n-25 96 1 163 29 201 85 20 29 23 44 20 103 -3 61 -7 71 -35 96 -32 29 -72 46\r\n-191 81 -119 35 -161 88 -109 137 52 48 164 58 232 19 34 -19 41 -29 45 -61 3\r\n-22 10 -41 17 -43 17 -6 25 32 21 97 -2 43 -7 56 -20 58 -12 2 -18 -3 -18 -16\r\n0 -19 0 -19 -39 0 -44 22 -133 32 -171 19z m57 -247 c64 -21 127 -47 144 -61\r\n26 -23 29 -30 29 -86 -1 -51 -3 -58 -12 -42 -27 50 -55 66 -164 101 -128 40\r\n-164 68 -164 130 l0 35 27 -20 c14 -12 78 -38 140 -57z" }),
+            React.createElement("path", { d: "M4572 4678 c-55 -128 -110 -254 -121 -280 -19 -46 -22 -48 -61 -48\r\n-29 0 -40 -4 -40 -15 0 -13 15 -15 92 -13 62 2 93 7 96 16 2 8 -8 12 -33 12\r\n-41 0 -41 5 -1 90 l21 45 96 3 96 3 26 -63 c15 -35 27 -66 27 -70 0 -5 -16 -8\r\n-36 -8 -24 0 -34 -4 -31 -12 5 -18 318 -19 324 -1 3 8 -12 13 -42 15 l-47 3\r\n-117 275 c-72 168 -124 276 -133 278 -11 2 -43 -60 -116 -230z m193 2 c36 -83\r\n65 -154 65 -156 0 -3 -21 -4 -47 -2 l-47 3 -49 112 -49 113 23 55 c16 40 25\r\n51 31 41 4 -8 37 -82 73 -166z m-102 -67 c20 -48 35 -88 33 -90 -2 -2 -37 -3\r\n-79 -1 l-75 3 36 87 c21 48 39 88 42 88 3 0 22 -39 43 -87z m211 -185 c14 -35\r\n26 -66 26 -70 0 -5 -20 -8 -45 -8 -43 0 -45 1 -65 47 -11 26 -23 57 -26 70 -6\r\n21 -3 23 38 23 l45 0 27 -62z" }),
+            React.createElement("path", { d: "M201 4678 c-41 -123 -84 -247 -97 -277 -28 -63 -29 -74 -8 -69 11 2\r\n30 44 58 130 23 70 44 130 47 132 3 3 38 -56 79 -129 41 -74 78 -135 81 -135\r\n3 0 39 69 79 153 l73 152 51 -152 51 -153 103 0 c79 0 103 3 99 13 -2 6 -46\r\n135 -98 284 -52 150 -96 273 -99 273 -3 0 -41 -72 -85 -160 -94 -188 -76 -190\r\n-180 21 -38 76 -72 139 -75 139 -3 0 -39 -100 -79 -222z" }),
+            React.createElement("path", { d: "M979 4670 c-83 -204 -97 -230 -116 -230 -26 0 -31 -25 -7 -34 14 -5\r\n14 -8 0 -28 -9 -12 -16 -28 -16 -35 0 -24 21 -13 41 22 l21 35 104 0 104 0 17\r\n-35 17 -35 99 0 c90 0 99 2 93 18 -17 47 -252 551 -257 552 -3 0 -48 -103\r\n-100 -230z m75 -142 l45 -98 -94 0 -95 0 21 53 c12 28 30 76 42 105 11 29 24\r\n49 28 45 4 -4 28 -52 53 -105z" }),
+            React.createElement("path", { d: "M1377 4893 c-18 -17 -1 -23 63 -23 l70 0 0 -270 0 -270 100 0 100 0\r\n0 270 0 270 49 0 c56 0 84 8 75 21 -6 10 -447 12 -457 2z" }),
+            React.createElement("path", { d: "M1920 4615 l0 -285 100 0 100 0 0 285 0 285 -100 0 -100 0 0 -285z" }),
+            React.createElement("path", { d: "M2437 4889 c-76 -18 -161 -80 -193 -140 -62 -119 -22 -292 85 -362\r\n59 -39 144 -61 213 -53 69 7 155 41 168 67 15 27 -8 35 -33 11 -35 -33 -91\r\n-52 -152 -52 l-55 0 0 255 0 255 55 0 c58 0 116 -19 147 -47 13 -12 22 -13 29\r\n-6 17 17 -25 49 -90 67 -62 17 -115 19 -174 5z" }),
+            React.createElement("path", { d: "M3297 4894 c-16 -16 -5 -23 39 -26 l46 -3 117 -275 c70 -162 124\r\n-276 133 -278 10 -2 38 52 94 183 52 122 82 181 87 173 5 -7 41 -89 81 -183\r\n41 -96 79 -171 88 -173 10 -2 49 78 134 275 l120 278 42 3 c29 2 42 8 42 18 0\r\n11 -19 14 -95 14 -78 0 -95 -3 -95 -15 0 -11 11 -15 36 -15 25 0 35 -4 31 -12\r\n-37 -91 -140 -325 -146 -331 -6 -6 -151 315 -151 336 0 4 16 7 35 7 24 0 35 5\r\n35 15 0 13 -24 15 -155 15 -128 0 -155 -2 -155 -14 0 -10 13 -16 36 -18 34 -3\r\n37 -6 65 -72 l30 -70 -42 -98 c-24 -55 -46 -101 -49 -103 -4 -2 -43 80 -88\r\n183 l-80 187 -114 3 c-63 1 -117 -1 -121 -4z m297 -225 l86 -200 -21 -50 c-12\r\n-28 -25 -46 -30 -42 -9 9 -209 473 -209 485 0 4 20 8 44 8 l44 0 86 -201z\r\nm350 1 l87 -200 -22 -50 c-12 -28 -25 -47 -29 -43 -10 10 -210 473 -210 485 0\r\n4 20 8 44 8 l43 0 87 -200z" }),
+            React.createElement("path", { d: "M5070 4850 c0 -38 4 -50 15 -50 10 0 15 11 15 35 0 33 2 35 35 35\r\nl35 0 0 -155 0 -155 -36 0 c-45 0 -42 -24 4 -28 l32 -3 0 -90 0 -89 -36 0\r\nc-24 0 -34 -4 -32 -12 4 -10 45 -14 151 -16 124 -2 147 0 147 12 0 10 -13 16\r\n-37 18 l-38 3 -3 88 -3 87 93 0 c164 1 217 47 218 190 0 78 -21 125 -69 157\r\n-33 22 -42 23 -262 23 l-229 0 0 -50z m220 -135 l0 -155 -40 0 -40 0 0 155 0\r\n155 40 0 40 0 0 -155z m130 140 c43 -22 60 -63 60 -145 0 -66 -2 -73 -33 -107\r\n-29 -30 -40 -36 -78 -37 l-44 -1 -3 153 -3 152 36 0 c20 0 49 -7 65 -15z m119\r\n0 c37 -19 61 -71 61 -134 0 -93 -35 -142 -109 -157 l-34 -7 24 32 c21 29 24\r\n43 24 126 0 81 -3 97 -23 124 l-23 31 26 0 c14 0 39 -7 54 -15z m-249 -415 l0\r\n-90 -40 0 -40 0 0 90 0 90 40 0 40 0 0 -90z" }))));
 };
 
 var Icon$H = function (props) {
@@ -461,32 +442,19 @@ var Icon$F = function (props) {
 };
 
 var Icon$E = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
-        React.createElement("path", { d: "M48,55.29a28.44,28.44,0,0,1-39.78-.7l-.79-.83A28.43,28.43,0,0,1,8.88,14C19.3,4.14,56.83,1.43,63.07,1.05L64,1s0,.32-.1.89C63.13,8.09,58.37,45.42,48,55.29Z", transform: "translate(0 -1)", fill: "#36b397" }),
-        React.createElement("path", { d: "M63.84,1.91,2.14,60.31l-.79-.84L63.05,1.08,64,1S63.92,1.32,63.84,1.91Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M38.31,23.87c-.57,1.31-1.17,2.33-1.34,2.26a5.63,5.63,0,0,1,.74-2.52L43.18,10.9c.57-1.31,1.17-2.33,1.33-2.26s-.16,1.2-.73,2.52Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M29.63,32.08c-.57,1.31-1.16,2.33-1.33,2.25A5.61,5.61,0,0,1,29,31.82l8.37-19.44c.56-1.31,1.17-2.33,1.33-2.26s-.16,1.21-.73,2.52Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M21,40.29c-.56,1.31-1.17,2.33-1.33,2.26A5.51,5.51,0,0,1,20.36,40L32,13.08c.57-1.31,1.17-2.34,1.33-2.26s-.16,1.21-.73,2.52Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M12.29,48.5c-.57,1.31-1.17,2.33-1.33,2.26s.16-1.21.73-2.52L25.33,16.57c.57-1.31,1.17-2.33,1.33-2.26s-.16,1.21-.73,2.52Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M39.72,25.36c-1.35.5-2.39,1-2.33,1.2S38.6,26.46,40,26l13-4.77c1.34-.49,2.39-1,2.32-1.2s-1.21.1-2.55.59Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M31.05,33.57c-1.35.49-2.39,1-2.34,1.21a5.78,5.78,0,0,0,2.56-.6l19.87-7.29c1.34-.49,2.39-1,2.33-1.21a5.62,5.62,0,0,0-2.56.6Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M22.37,41.78C21,42.27,20,42.82,20,43s1.22-.1,2.56-.59L50.15,32.28c1.33-.5,2.39-1,2.33-1.21a5.67,5.67,0,0,0-2.56.59Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M13.71,50c-1.35.49-2.4,1-2.34,1.21a5.59,5.59,0,0,0,2.55-.6L46.29,38.71c1.34-.49,2.39-1,2.33-1.2a5.64,5.64,0,0,0-2.56.6Z", transform: "translate(0 -1)", fill: "#125f4f" })));
+    return (React.createElement("svg", { version: "1.0", xmlns: "http://www.w3.org/2000/svg", width: "42pt", height: "21pt", viewBox: "0 0 21 512", preserveAspectRatio: "xMidYMid meet" },
+        React.createElement("g", { transform: "translate(0.000000,499.000000) scale(0.100000,-0.100000)", fill: "#004aad", stroke: "none" },
+            React.createElement("path", { d: "M1813 4945 c-814 -103 -1478 -599 -1702 -1270 -58 -173 -74 -281 -75\r\n-480 0 -134 5 -204 18 -275 43 -225 148 -467 284 -660 82 -116 276 -313 395\r\n-402 310 -230 666 -370 1077 -424 158 -20 525 -15 670 10 373 65 705 203 983\r\n409 98 72 276 244 343 330 l48 62 -71 -65 c-86 -80 -231 -162 -333 -189 -138\r\n-37 -315 -53 -447 -42 -183 16 -249 36 -455 139 -5 2 -8 -8 -8 -23 0 -86 -92\r\n-140 -170 -100 -57 30 -60 45 -60 366 l0 291 34 34 c29 29 41 34 81 34 40 0\r\n52 -5 81 -34 33 -33 34 -35 34 -122 1 -145 45 -210 195 -284 126 -63 186 -75\r\n360 -74 122 0 166 5 235 23 152 40 213 80 226 147 8 46 -34 133 -84 172 -62\r\n49 -106 66 -392 151 -151 46 -298 94 -327 107 -167 79 -297 241 -323 401 -15\r\n87 -12 298 5 376 36 171 166 317 366 411 113 54 177 68 339 73 171 6 280 -13\r\n404 -70 l74 -35 13 30 c24 59 99 84 159 53 56 -29 60 -49 60 -324 l0 -250 -30\r\n-34 c-51 -58 -129 -55 -178 8 -19 24 -22 40 -22 126 l0 97 -42 37 c-209 182\r\n-624 177 -807 -9 -74 -76 -65 -152 27 -224 63 -50 107 -67 417 -162 165 -50\r\n332 -107 371 -125 152 -70 261 -165 316 -275 l33 -65 0 -205 c0 -202 0 -206\r\n-27 -262 -15 -32 -25 -58 -23 -58 9 0 99 155 138 240 96 207 136 374 144 605\r\n4 121 1 187 -11 272 -70 475 -358 903 -804 1194 -250 163 -534 271 -867 330\r\n-158 28 -507 35 -672 14z m-950 -487 c19 -35 88 -166 153 -293 65 -126 151\r\n-293 191 -370 40 -77 90 -172 110 -212 20 -40 39 -70 42 -67 3 3 118 228 256\r\n501 137 273 254 495 260 495 5 0 17 -22 26 -49 9 -26 58 -165 107 -308 194\r\n-559 288 -831 383 -1104 54 -156 99 -290 99 -297 0 -12 -52 -14 -322 -12\r\nl-322 3 -67 205 c-37 113 -103 314 -146 448 -44 134 -83 243 -88 244 -5 0 -73\r\n-134 -152 -298 -246 -516 -304 -634 -312 -634 -4 0 -17 19 -29 43 -12 23 -43\r\n80 -70 127 -27 47 -80 141 -118 210 -39 69 -112 200 -164 293 -52 92 -97 167\r\n-101 167 -6 0 -174 -491 -234 -685 -31 -98 -52 -129 -92 -133 -34 -3 -55 16\r\n-56 52 0 13 23 72 50 132 29 62 156 424 293 834 264 790 258 770 264 770 2 0\r\n20 -28 39 -62z" }),
+            React.createElement("path", { d: "M3016 3925 c-201 -39 -378 -160 -453 -313 -28 -57 -28 -58 -28 -257\r\nl0 -200 30 -60 c44 -87 140 -179 228 -220 40 -18 196 -69 347 -114 292 -88\r\n348 -113 427 -192 90 -88 118 -210 72 -305 -34 -72 -133 -131 -272 -164 -339\r\n-80 -675 -12 -845 169 -60 64 -76 106 -82 214 -3 55 -9 97 -15 97 -6 0 -11\r\n-95 -13 -260 -2 -227 0 -260 13 -260 13 0 15 20 15 125 l0 126 77 -66 c163\r\n-139 380 -205 632 -192 135 7 305 43 379 80 78 39 162 95 169 113 11 29 -18\r\n182 -47 241 -34 72 -115 150 -198 192 -34 17 -182 67 -330 111 -148 43 -282\r\n84 -297 90 -56 21 -157 103 -201 162 -65 88 -75 135 -72 321 l3 155 60 -70\r\nc68 -79 157 -147 230 -176 28 -11 178 -59 335 -107 157 -48 313 -100 347 -115\r\n121 -55 209 -131 249 -215 21 -46 23 -64 25 -220 1 -160 0 -174 -24 -240 -15\r\n-38 -25 -71 -23 -73 7 -6 47 57 62 100 25 67 31 295 10 377 -43 169 -181 261\r\n-561 376 -435 131 -474 147 -559 229 -62 61 -90 118 -90 186 0 89 53 164 169\r\n240 222 144 574 140 798 -10 41 -27 87 -67 103 -87 26 -35 29 -47 34 -138 3\r\n-59 9 -99 15 -98 6 2 11 87 13 223 2 189 0 220 -12 220 -12 0 -16 -19 -18 -95\r\nl-3 -94 -65 51 c-132 103 -257 146 -440 153 -78 3 -141 0 -194 -10z" }),
+            React.createElement("path", { d: "M2655 3224 c16 -87 96 -188 185 -234 19 -10 143 -50 275 -89 381\r\n-112 417 -128 526 -228 l59 -55 0 66 c0 82 -16 123 -71 175 -66 65 -181 114\r\n-499 211 -283 87 -376 123 -448 171 l-33 22 6 -39z" }))));
 };
 
 var Icon$D = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React.createElement("circle", { cx: "45", cy: "45", r: "45", fill: "#cccccc" }),
-        React.createElement("path", { d: "M67.48,77.4a40,40,0,0,1-56-1l-1.1-1.17A40,40,0,0,1,12.5,19.3C27.16,5.42,80,1.6,88.77,1.08L90,1s0,.45-.14,1.25C88.85,11,82.15,63.51,67.48,77.4Z", transform: "translate(0 -1)", fill: "#36b397" }),
-        React.createElement("path", { d: "M89.84,2.29,3,84.47,1.9,83.29,88.73,1.11,90,1S90,1.45,89.84,2.29Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M53.91,33.18c-.8,1.85-1.64,3.29-1.88,3.19s.24-1.7,1-3.55l7.7-17.88c.8-1.85,1.64-3.29,1.88-3.19s-.24,1.7-1,3.55Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M41.7,44.73c-.8,1.86-1.64,3.29-1.87,3.18s.23-1.69,1-3.54L52.65,17c.79-1.85,1.64-3.28,1.87-3.19s-.23,1.71-1,3.56Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M29.5,56.29c-.8,1.85-1.65,3.28-1.87,3.18s.22-1.7,1-3.54L45,18c.81-1.85,1.64-3.29,1.87-3.18s-.23,1.7-1,3.55Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M17.29,67.84c-.8,1.85-1.64,3.28-1.87,3.19s.23-1.7,1-3.55l19.2-44.56c.8-1.86,1.64-3.29,1.87-3.18s-.23,1.69-1,3.54Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M55.89,35.28C54,36,52.53,36.75,52.62,37s1.71-.13,3.6-.83L74.5,29.43c1.89-.69,3.36-1.46,3.27-1.69s-1.7.14-3.59.83Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M43.7,46.83c-1.9.7-3.37,1.46-3.29,1.7s1.7-.14,3.6-.84L72,37.43c1.89-.69,3.37-1.46,3.28-1.69s-1.71.13-3.61.83Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M31.49,58.39c-1.9.69-3.37,1.46-3.29,1.69s1.72-.14,3.6-.83L70.57,45c1.88-.69,3.37-1.45,3.28-1.69s-1.71.14-3.6.83Z", transform: "translate(0 -1)", fill: "#125f4f" }),
-        React.createElement("path", { d: "M19.29,69.94c-1.9.69-3.38,1.46-3.29,1.7s1.7-.14,3.59-.84L65.14,54.07c1.89-.69,3.37-1.45,3.28-1.68s-1.7.13-3.6.83Z", transform: "translate(0 -1)", fill: "#125f4f" })));
+    return (React.createElement("svg", { version: "1.0", xmlns: "http://www.w3.org/2000/svg", width: "42pt", height: "21pt", viewBox: "0 0 21 512", preserveAspectRatio: "xMidYMid meet" },
+        React.createElement("g", { transform: "translate(0.000000,499.000000) scale(0.100000,-0.100000)", fill: "#004aad", stroke: "none" },
+            React.createElement("path", { d: "M1813 4945 c-814 -103 -1478 -599 -1702 -1270 -58 -173 -74 -281 -75\r\n-480 0 -134 5 -204 18 -275 43 -225 148 -467 284 -660 82 -116 276 -313 395\r\n-402 310 -230 666 -370 1077 -424 158 -20 525 -15 670 10 373 65 705 203 983\r\n409 98 72 276 244 343 330 l48 62 -71 -65 c-86 -80 -231 -162 -333 -189 -138\r\n-37 -315 -53 -447 -42 -183 16 -249 36 -455 139 -5 2 -8 -8 -8 -23 0 -86 -92\r\n-140 -170 -100 -57 30 -60 45 -60 366 l0 291 34 34 c29 29 41 34 81 34 40 0\r\n52 -5 81 -34 33 -33 34 -35 34 -122 1 -145 45 -210 195 -284 126 -63 186 -75\r\n360 -74 122 0 166 5 235 23 152 40 213 80 226 147 8 46 -34 133 -84 172 -62\r\n49 -106 66 -392 151 -151 46 -298 94 -327 107 -167 79 -297 241 -323 401 -15\r\n87 -12 298 5 376 36 171 166 317 366 411 113 54 177 68 339 73 171 6 280 -13\r\n404 -70 l74 -35 13 30 c24 59 99 84 159 53 56 -29 60 -49 60 -324 l0 -250 -30\r\n-34 c-51 -58 -129 -55 -178 8 -19 24 -22 40 -22 126 l0 97 -42 37 c-209 182\r\n-624 177 -807 -9 -74 -76 -65 -152 27 -224 63 -50 107 -67 417 -162 165 -50\r\n332 -107 371 -125 152 -70 261 -165 316 -275 l33 -65 0 -205 c0 -202 0 -206\r\n-27 -262 -15 -32 -25 -58 -23 -58 9 0 99 155 138 240 96 207 136 374 144 605\r\n4 121 1 187 -11 272 -70 475 -358 903 -804 1194 -250 163 -534 271 -867 330\r\n-158 28 -507 35 -672 14z m-950 -487 c19 -35 88 -166 153 -293 65 -126 151\r\n-293 191 -370 40 -77 90 -172 110 -212 20 -40 39 -70 42 -67 3 3 118 228 256\r\n501 137 273 254 495 260 495 5 0 17 -22 26 -49 9 -26 58 -165 107 -308 194\r\n-559 288 -831 383 -1104 54 -156 99 -290 99 -297 0 -12 -52 -14 -322 -12\r\nl-322 3 -67 205 c-37 113 -103 314 -146 448 -44 134 -83 243 -88 244 -5 0 -73\r\n-134 -152 -298 -246 -516 -304 -634 -312 -634 -4 0 -17 19 -29 43 -12 23 -43\r\n80 -70 127 -27 47 -80 141 -118 210 -39 69 -112 200 -164 293 -52 92 -97 167\r\n-101 167 -6 0 -174 -491 -234 -685 -31 -98 -52 -129 -92 -133 -34 -3 -55 16\r\n-56 52 0 13 23 72 50 132 29 62 156 424 293 834 264 790 258 770 264 770 2 0\r\n20 -28 39 -62z" }),
+            React.createElement("path", { d: "M3016 3925 c-201 -39 -378 -160 -453 -313 -28 -57 -28 -58 -28 -257\r\nl0 -200 30 -60 c44 -87 140 -179 228 -220 40 -18 196 -69 347 -114 292 -88\r\n348 -113 427 -192 90 -88 118 -210 72 -305 -34 -72 -133 -131 -272 -164 -339\r\n-80 -675 -12 -845 169 -60 64 -76 106 -82 214 -3 55 -9 97 -15 97 -6 0 -11\r\n-95 -13 -260 -2 -227 0 -260 13 -260 13 0 15 20 15 125 l0 126 77 -66 c163\r\n-139 380 -205 632 -192 135 7 305 43 379 80 78 39 162 95 169 113 11 29 -18\r\n182 -47 241 -34 72 -115 150 -198 192 -34 17 -182 67 -330 111 -148 43 -282\r\n84 -297 90 -56 21 -157 103 -201 162 -65 88 -75 135 -72 321 l3 155 60 -70\r\nc68 -79 157 -147 230 -176 28 -11 178 -59 335 -107 157 -48 313 -100 347 -115\r\n121 -55 209 -131 249 -215 21 -46 23 -64 25 -220 1 -160 0 -174 -24 -240 -15\r\n-38 -25 -71 -23 -73 7 -6 47 57 62 100 25 67 31 295 10 377 -43 169 -181 261\r\n-561 376 -435 131 -474 147 -559 229 -62 61 -90 118 -90 186 0 89 53 164 169\r\n240 222 144 574 140 798 -10 41 -27 87 -67 103 -87 26 -35 29 -47 34 -138 3\r\n-59 9 -99 15 -98 6 2 11 87 13 223 2 189 0 220 -12 220 -12 0 -16 -19 -18 -95\r\nl-3 -94 -65 51 c-132 103 -257 146 -440 153 -78 3 -141 0 -194 -10z" }),
+            React.createElement("path", { d: "M2655 3224 c16 -87 96 -188 185 -234 19 -10 143 -50 275 -89 381\r\n-112 417 -128 526 -228 l59 -55 0 66 c0 82 -16 123 -71 175 -66 65 -181 114\r\n-499 211 -283 87 -376 123 -448 171 l-33 22 6 -39z" }))));
 };
 
 var Icon$C = function (props) {
@@ -1360,10 +1328,12 @@ var scaleKeyValues = {
         toggleWidth: "72px",
     },
 };
-var getScale = function (property) { return function (_a) {
-    var _b = _a.scale, scale = _b === void 0 ? scales$3.MD : _b;
-    return scaleKeyValues[scale][property];
-}; };
+var getScale = function (property) {
+    return function (_a) {
+        var _b = _a.scale, scale = _b === void 0 ? scales$3.MD : _b;
+        return scaleKeyValues[scale][property];
+    };
+};
 var Handle = styled.div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
@@ -1400,28 +1370,32 @@ Toggle.defaultProps = {
     scale: scales.MD,
 };
 
-var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA < upperB) {
-        return -1;
-    }
-    if (upperA > upperB) {
-        return 1;
-    }
-    return 0;
-}; };
-var byTextDescending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA > upperB) {
-        return -1;
-    }
-    if (upperA < upperB) {
-        return 1;
-    }
-    return 0;
-}; };
+var byTextAscending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA < upperB) {
+            return -1;
+        }
+        if (upperA > upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
+var byTextDescending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA > upperB) {
+            return -1;
+        }
+        if (upperA < upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
 
 var sortByColumn = function (data, sortColumn, columns) {
     var isAscending = null;
@@ -1463,151 +1437,153 @@ var getColumnsByName = function (columns) {
     });
     return columnsByName;
 };
-var createReducer = function () { return function (state, action) {
-    var rows = [];
-    var nextPage = 0;
-    var prevPage = 0;
-    var isAscending = null;
-    var sortedRows = [];
-    var columnCopy = [];
-    var filteredRows = [];
-    var selectedRowsById = {};
-    var stateCopy = __assign({}, state);
-    var rowIds = {};
-    switch (action.type) {
-        case "SET_ROWS":
-            rows = __spreadArray([], action.data);
-            // preserve sorting if a sort is already enabled when data changes
-            if (state.sortColumn) {
-                rows = sortByColumn(action.data, state.sortColumn, state.columns);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            columnCopy = state.columns.map(function (column) {
-                if (state.sortColumn === column.name) {
-                    return __assign(__assign({}, column), { sorted: {
-                            on: true,
-                            asc: column.sorted.asc,
-                        } });
+var createReducer = function () {
+    return function (state, action) {
+        var rows = [];
+        var nextPage = 0;
+        var prevPage = 0;
+        var isAscending = null;
+        var sortedRows = [];
+        var columnCopy = [];
+        var filteredRows = [];
+        var selectedRowsById = {};
+        var stateCopy = __assign({}, state);
+        var rowIds = {};
+        switch (action.type) {
+            case "SET_ROWS":
+                rows = __spreadArray([], action.data);
+                // preserve sorting if a sort is already enabled when data changes
+                if (state.sortColumn) {
+                    rows = sortByColumn(action.data, state.sortColumn, state.columns);
                 }
-                return column;
-            });
-            return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
-        case "NEXT_PAGE":
-            nextPage = state.pagination.page + 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
-        case "PREV_PAGE":
-            prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
-        case "TOGGLE_SORT":
-            if (!(action.columnName in state.columnsByName)) {
-                throw new Error("Invalid column, " + action.columnName + " not found");
-            }
-            // loop through all columns and set the sort parameter to off unless
-            // it's the specified column (only one column at a time for )
-            columnCopy = state.columns.map(function (column) {
-                // if the row was found
-                if (action.columnName === column.name) {
-                    if (action.isAscOverride !== undefined) {
-                        // force the sort order
-                        isAscending = action.isAscOverride;
-                    }
-                    else {
-                        // if it's undefined, start by setting to ascending, otherwise toggle
-                        isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
-                    }
-                    if (column.sort) {
-                        sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
-                        // default to sort by string
-                    }
-                    else {
-                        sortedRows = isAscending
-                            ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
-                            : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
-                    }
-                    return __assign(__assign({}, column), { sorted: {
-                            on: true,
-                            asc: isAscending,
-                        } });
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                // set sorting to false for all other columns
-                return __assign(__assign({}, column), { sorted: {
-                        on: false,
-                        asc: false,
-                    } });
-            });
-            return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
-        case "GLOBAL_FILTER":
-            filteredRows = action.filter(state.originalRows);
-            selectedRowsById = {};
-            state.selectedRows.forEach(function (row) {
-                var _a;
-                selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
-            });
-            return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
-                    return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
-                }), filterOn: true });
-        case "SELECT_ROW":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.rows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                return newRow;
-            });
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
-                }
-                return newRow;
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
-            stateCopy.toggleAllState =
-                stateCopy.selectedRows.length === stateCopy.rows.length
-                    ? (stateCopy.toggleAllState = true)
-                    : (stateCopy.toggleAllState = false);
-            return stateCopy;
-        case "SEARCH_STRING":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.originalRows.filter(function (row) {
-                return (row.cells.filter(function (cell) {
-                    if (cell.value.includes(action.searchString)) {
-                        return true;
+                columnCopy = state.columns.map(function (column) {
+                    if (state.sortColumn === column.name) {
+                        return __assign(__assign({}, column), { sorted: {
+                                on: true,
+                                asc: column.sorted.asc,
+                            } });
                     }
-                    return false;
-                }).length > 0);
-            });
-            return stateCopy;
-        case "TOGGLE_ALL":
-            if (state.selectedRows.length < state.rows.length) {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = true;
-                    return __assign(__assign({}, row), { selected: true });
+                    return column;
                 });
-                stateCopy.toggleAllState = true;
-            }
-            else {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = false;
-                    return __assign(__assign({}, row), { selected: false });
+                return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
+            case "NEXT_PAGE":
+                nextPage = state.pagination.page + 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
+            case "PREV_PAGE":
+                prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
+            case "TOGGLE_SORT":
+                if (!(action.columnName in state.columnsByName)) {
+                    throw new Error("Invalid column, " + action.columnName + " not found");
+                }
+                // loop through all columns and set the sort parameter to off unless
+                // it's the specified column (only one column at a time for )
+                columnCopy = state.columns.map(function (column) {
+                    // if the row was found
+                    if (action.columnName === column.name) {
+                        if (action.isAscOverride !== undefined) {
+                            // force the sort order
+                            isAscending = action.isAscOverride;
+                        }
+                        else {
+                            // if it's undefined, start by setting to ascending, otherwise toggle
+                            isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
+                        }
+                        if (column.sort) {
+                            sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
+                            // default to sort by string
+                        }
+                        else {
+                            sortedRows = isAscending
+                                ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
+                                : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
+                        }
+                        return __assign(__assign({}, column), { sorted: {
+                                on: true,
+                                asc: isAscending,
+                            } });
+                    }
+                    // set sorting to false for all other columns
+                    return __assign(__assign({}, column), { sorted: {
+                            on: false,
+                            asc: false,
+                        } });
                 });
-                stateCopy.toggleAllState = false;
-            }
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
-            return stateCopy;
-        default:
-            throw new Error("Invalid reducer action");
-    }
-}; };
+                return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
+            case "GLOBAL_FILTER":
+                filteredRows = action.filter(state.originalRows);
+                selectedRowsById = {};
+                state.selectedRows.forEach(function (row) {
+                    var _a;
+                    selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
+                });
+                return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
+                        return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
+                    }), filterOn: true });
+            case "SELECT_ROW":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.rows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
+                stateCopy.toggleAllState =
+                    stateCopy.selectedRows.length === stateCopy.rows.length
+                        ? (stateCopy.toggleAllState = true)
+                        : (stateCopy.toggleAllState = false);
+                return stateCopy;
+            case "SEARCH_STRING":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.originalRows.filter(function (row) {
+                    return (row.cells.filter(function (cell) {
+                        if (cell.value.includes(action.searchString)) {
+                            return true;
+                        }
+                        return false;
+                    }).length > 0);
+                });
+                return stateCopy;
+            case "TOGGLE_ALL":
+                if (state.selectedRows.length < state.rows.length) {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = true;
+                        return __assign(__assign({}, row), { selected: true });
+                    });
+                    stateCopy.toggleAllState = true;
+                }
+                else {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = false;
+                        return __assign(__assign({}, row), { selected: false });
+                    });
+                    stateCopy.toggleAllState = false;
+                }
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
+                return stateCopy;
+            default:
+                throw new Error("Invalid reducer action");
+        }
+    };
+};
 var sortDataInOrder = function (data, columns) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return data.map(function (row) {
@@ -2106,31 +2082,8 @@ var Icon$i = function (props) {
 };
 
 var Logo$2 = function (_a) {
-    _a.isDark; var props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),
-        React.createElement("circle", { cx: "15", cy: "15", r: "15", fill: "#64C6EB" }),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M14,5a6,6,0,0,0-3.34-4C7.92-.09,4.17-.66,1.67,1.2s.89,8.3,3.14,8.58,5.8-1,8.51,1.58S14.3,6,14,5Z", transform: "translate(-0.78 0.01)", fill: "#9c9b9b" }),
-            React.createElement("path", { d: "M11.93,4.53C11,2.38,7,1.31,4.56,2.27s.53,5,1.32,5.58A8.12,8.12,0,0,0,10,8.78C10.68,8.57,12.16,5.09,11.93,4.53Z", transform: "translate(-0.78 0.01)", fill: "#706f6e" })),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M18.23,5a6,6,0,0,1,3.34-4C24.26-.09,28-.66,30.51,1.2s-.89,8.3-3.14,8.58-5.8-1-8.51,1.58S17.88,6,18.23,5Z", transform: "translate(-0.78 0.01)", fill: "#a7a5a5" }),
-            React.createElement("path", { d: "M20.25,4.53c.89-2.15,5-3.22,7.37-2.26s-.53,5-1.32,5.58a8.12,8.12,0,0,1-4.12.93C21.5,8.57,20,5.09,20.25,4.53Z", transform: "translate(-0.78 0.01)", fill: "#868686" })),
-        React.createElement("g", null,
-            React.createElement("path", { d: "M16.17,25.92c6.61,0,14.59-4.85,13-11.62-.56-2.31-1-5-1-5a8.4,8.4,0,0,0-8.4-8.4,32.91,32.91,0,0,1-3.59.33A32.91,32.91,0,0,1,12.55.94a8.39,8.39,0,0,0-8.39,8.4s-.44,2.65-1,5c-1.64,6.77,6.35,11.62,13,11.62Z", transform: "translate(-0.78 0.01)", fill: "#f2f2f2" }),
-            React.createElement("path", { d: "M16.13,1.27A32.62,32.62,0,0,1,12.55.94a8.39,8.39,0,0,0-8.39,8.4s-.44,2.65-1,5c-1.64,6.77,6.35,11.62,13,11.62h0Z", transform: "translate(-0.78 0.01)", fill: "#fff" })),
-        React.createElement("g", null,
-            React.createElement("g", null,
-                React.createElement("path", { d: "M9.48,13.72a.84.84,0,0,1-.91-.54c-.09-.34.11-.8.47-.82a.83.83,0,0,1,.9.56A.66.66,0,0,1,9.48,13.72Zm0-1.07a.2.2,0,1,0,.19.2A.2.2,0,0,0,9.49,12.65Z", transform: "translate(-0.78 0.01)", fill: "#585857" }),
-                React.createElement("path", { d: "M22,12.92a.81.81,0,0,1,.89-.56c.36,0,.56.48.47.82a.83.83,0,0,1-.91.54A.65.65,0,0,1,22,12.92Zm.83-.07a.19.19,0,0,0,.19.2.2.2,0,0,0,0-.4A.19.19,0,0,0,22.85,12.85Z", transform: "translate(-0.78 0.01)", fill: "#585857" })),
-            React.createElement("g", null,
-                React.createElement("path", { d: "M19,21.13c0-1.81-2.89-.28-2.89-1.42,0,1.14-2.89-.39-2.89,1.42A2.72,2.72,0,0,0,16.13,24,2.71,2.71,0,0,0,19,21.13Z", transform: "translate(-0.78 0.01)", fill: "#bdbcbc" }),
-                React.createElement("path", { d: "M19,20.8c-.34-1.28-2.85,0-2.85-1.09,0,1.06-2.45-.17-2.84,1.06,0,.1,1,.9,2.85.9S19,20.9,19,20.8Z", transform: "translate(-0.78 0.01)", fill: "#cdcccc" }),
-                React.createElement("path", { d: "M16.14,19.73v0c0,1.14-2.89-.39-2.89,1.42A2.72,2.72,0,0,0,16.13,24h0Z", transform: "translate(-0.78 0.01)", fill: "#b3b3b3" }),
-                React.createElement("path", { d: "M16.14,19.73v0c0,1.06-2.45-.17-2.84,1.06,0,.1,1,.9,2.85.9Z", transform: "translate(-0.78 0.01)", fill: "#c3c2c2" })),
-            React.createElement("g", null,
-                React.createElement("path", { d: "M16.14,11a3.15,3.15,0,0,1,1.33.29,3.64,3.64,0,0,1,1.81,4.32v0A3,3,0,0,0,19.19,17h0a2.63,2.63,0,0,1-.09,1.15,3.05,3.05,0,0,1-2.86,2.17h-.18a3.07,3.07,0,0,1-2.87-2.17A2.62,2.62,0,0,1,13.11,17h0A3.3,3.3,0,0,0,13,15.69l-.09-.29a3.77,3.77,0,0,1,0-2.13A3,3,0,0,1,15.85,11Z", transform: "translate(-0.78 0.01)", fill: "#4d4d4c" }),
-                React.createElement("path", { d: "M16.13,11h-.28A3,3,0,0,0,13,13.27a3.77,3.77,0,0,0,0,2.13l.09.29A3.3,3.3,0,0,1,13.11,17a2.62,2.62,0,0,0,.08,1.15,3.07,3.07,0,0,0,2.87,2.17h.07Z", transform: "translate(-0.78 0.01)", fill: "#585857" }))),
-        React.createElement("text", { x: "40", y: "15", fill: "#000" }, "MaticSwap")));
+    _a.isDark; __rest(_a, ["isDark"]);
+    return "MaticSwap";
 };
 
 var Icon$h = function (props) {
@@ -2292,7 +2245,7 @@ var links = [
     {
         label: "Certik Audit (In-Progress)",
         icon: "ShieldIcon",
-        href: "https://twitter.com/maticswap/status/1367218225310818308",
+        href: "https://twitter.com/MaticSwap/status/1367218225310818308",
         target: "_blank",
     },
     {
@@ -2371,12 +2324,12 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/maticswap-binance/",
-                target: '_blank',
+                href: "https://github.com/maticswap/",
+                target: "_blank",
             },
             {
                 label: "Docs",
-                href: "https://maticswap-binance.gitbook.io/maticswap-binance/",
+                href: "https://maticswap.gitbook.io/maticswap/",
             },
             {
                 label: "Blog",
@@ -2392,7 +2345,7 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/maticswapfinancechat",
+                href: "https://t.me/maticswapchat",
             },
             {
                 label: "Announcements",
@@ -2403,7 +2356,7 @@ var socials = [
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/maticswap",
+        href: "https://twitter.com/MaticSwap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2517,7 +2470,7 @@ var templateObject_1$9;
 var PriceLink = styled.a(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x476f2a6abCCdaD8D292A181C578b16E29bC1F7A8", target: "_blank" },
+    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0xba26397cdff25f0d26e815d218ef3c77609ae7f1", target: "_blank" },
         React.createElement(Icon$D, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
@@ -2995,20 +2948,20 @@ var templateObject_1;
 
 var baseColors = {
     failure: "#cd3e5f",
-    primary: "#41aa29",
-    primaryBright: "#50aa29",
-    primaryDark: "#348c22",
-    secondary: "#45d9bb",
-    success: "#31D0AA",
-    warning: "#FFB237",
+    primary: "#004aad",
+    primaryBright: "#0466c8",
+    primaryDark: "#003566",
+    secondary: "#5584C8",
+    success: "#2E8BC0",
+    warning: "#ff7900",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#424f3e", textDisabled: "#BDC2C4", textSubtle: "#62815c", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#f9fdf9", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#424f3e", textDisabled: "#BDC2C4", textSubtle: "#003566", borderColor: "#1D4E89", card: "#FFFFFF", nav: "#f9fdf9", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#A28BD4", borderColor: "#524B63", card: "#27262c", nav: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#100C18", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", inputSecondary: "#66578D", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#003566", borderColor: "#0899BA", card: "#27262c", nav: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
