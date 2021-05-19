@@ -31,7 +31,7 @@ export const lightColors: Colors = {
   card: "#FFFFFF",
   nav: "#f9fdf9",
   gradients: {
-    bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+    bubblegum: "linear-gradient(139.73deg, #DFEFFF 0%, #555ADA 100%)",
   },
 };
 
